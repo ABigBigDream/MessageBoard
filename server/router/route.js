@@ -2,12 +2,12 @@ let Blog = require('../db/message');
 module.exports = function(app) {
 
     function show(res) {
-        Blog.find({}, (err, db)=>{
-            if(!err){
-                res.render('index', {
-                    data:db
-                });
-            }
+        Blog.find().sort({
+            _id: -1
+        }).then(db=>{
+            res.render('index', {
+                data : db
+            })
         });
     }
 

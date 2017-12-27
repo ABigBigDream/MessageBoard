@@ -29,7 +29,7 @@ app.listen(8080, ()=>{
     console.log('服务器启动成功');
 });
 //数据库的连接
-mongoose.connect('mongodb://localhost:27017/db1', {useMongoClient: true})
+mongoose.connect('mongodb://localhost:27017/blog', {useMongoClient: true})
 .on('open', (db)=>{
     console.log('数据库连接成功');
 })

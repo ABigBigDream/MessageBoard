@@ -1,0 +1,111 @@
+body{
+    position: relative;
+    background: gainsboro;
+}
+#wrap{
+    position: absolute;
+    width: 1000px;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: white;
+}
+
+#head{
+    font-size: 0px;
+}
+
+#head h1{
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+#head h2 {
+    margin: 0 0 25px 15px;
+    color: #7A7A7A;
+    font-size: 14px;
+}
+
+#head ul {
+    background: #252525;
+    padding-left: 15px; 
+    height: 42px;
+}
+
+#head ul li {
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    line-height: 42px;
+    font-size: 13px;
+    color: white;
+}
+
+#content {
+    clear: both;
+    margin-left: 30px;
+}
+
+#delete{
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: rgb(159, 192, 235);
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+
+#article .art {
+    width: 669px;
+    height: 114px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px 20px 1px;
+    padding-bottom: 8px;
+}
+
+#newMessage h2{
+    color: #222;
+    font-size: 18px;
+}
+
+#newMessage form {
+    margin: 0;
+    padding: 0;
+}
+
+#newMessage form ul{
+   list-style: none;
+   padding: 0;
+}
+
+#newMessage form ul li {
+    margin-top: 2px; 
+    padding: 2px;
+}
+
+#newMessage form ul input[type=text], textarea {
+    width: 350px;
+    padding: 2px;
+}
+
+#newMessage form ul input[type=submit] {
+    width: 60x;
+    height: 30px;
+}
+
+#aside {
+    width: 100px;
+    position: absolute;
+    top: 480px;
+    left: 800px;
+}
+
+#aside ul li a{
+    color: #06c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}

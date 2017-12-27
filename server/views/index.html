@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/index/index.css">
+    <script src="/public/jquery-3.2.1.js"></script>
+    <script src="/public/index/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="head">
+            <h1>付君留言板</h1>
+            <h2>可以写下你的思念和祝福</h2>
+            <img src="/public/img/1.jpg" alt="头部背景">
+            <ul class="list">
+                <li>首页</li>
+                <li>关于</li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="article">
+                {% for item in data %}
+                <div class="art">
+                    <h3>{{item.title}}</h3>
+                    <p>发表内容{{item.content}}由{{item.author}}发表</p>
+                    <p><a href="/delete?id={{item.id}}" id="delete">删除</a></p>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div id="newMessage">
+                <h2>发表留言</h2>
+                <form>
+                        <ul>
+                                <li><label for="">作者：</label></li>
+                                <li><input type="text" name="author" id="author"></li>
+                                <li><label for="">标题：</label></li>
+                                <li><input type="text" name="title" id="title"></li>
+                                <li><label for="">内容：</label></li>
+                                <li><textarea name="content"></textarea></li>
+                                <li><input type="submit" id="submit"></li>
+                        </ul>
+                </form>
+            </div>
+
+            <div id="aside">
+                <ul>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
